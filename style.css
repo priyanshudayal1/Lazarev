@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    color: white;
+    height: 12vh;
+    background-color: #111;
+}
+
+nav h1{
+    padding: 0.7vw 0;
+
+}
+
+nav button{
+    margin: 0.8vw 0;
+}
+
+.nav-part2{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vw 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4{
+    font-size: 0.77vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2vw;
+}
+.nav-part2 h5 span{
+    font-size: 0.78vw;
+    font-weight:400;
+    display: inline-block;
+    
+}
+
+.nav-part2 h5 {
+    margin-bottom: 1vw;
+    display: none;
+    overflow: hidden;
+}
+
+.nav-bottom{
+    border-bottom: 1px solid #dadada;
+    height: 0%;
+    width: 79%;
+    bottom: 0%;
+    position: absolute;
+    transition: all ease 0.65s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2vw 15vw;
+    padding-left: 18vw !important;
+    gap: 1rem 
+    !important;
+}
+
+#nav-bottom{
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid #dadada;
+    background-color: #111;
+}
+
+.bottom-div h5 {
+    margin-bottom: 2vw;
+}
+
+.bottom-div h5 span{
+    font-size: 1vw;
+    display: inline-block;
+    opacity: 0;
+}
+
+nav:hover .nav-bottom{
+    height: 150%;
+    bottom: -150%;
+}
+
+#lets-talk{
+    z-index: 10;
+    background-color: #0DA34E;
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    border: none;
+    border-radius:50px;
+    font-size: 0.85vw;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#lets-talk svg{
+    height: 0.8vw;
+    margin-left: 0.5vw;
+
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#page1 p{
+    font-weight: 400;
+    margin-top:3vh ;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+
+#page1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    background-color:#0DA34E;
+    border-radius: 50%;
+}
+
+#page1-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#page1-buttons h4{
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-transform: lowercase;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+#page1-buttons h4:nth-last-child(2){
+    border: none;
+    padding: 2px;
+}
+
+
+#moving-div{
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    width: 44%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes mobe {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#moving-div .move{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img{
+    height: 1vw;
+}
+
+
+.blur-left{
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    background:linear-gradient(to right,#111,transparent);
+    left: 0;
+}
+
+.blur-right{
+    height: 100%;
+    top: 0;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    background:linear-gradient(to right,transparent,#111);
+    right: 0;
+}
+
+
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+    color: white;
+}
