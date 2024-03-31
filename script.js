@@ -88,6 +88,21 @@ function page3VideoAnimation() {
     })
 }
 
+let video=document.querySelectorAll("#page7 video");
+let sections=document.querySelectorAll(".sec-right");
+
+sections.forEach((sec)=>{
+    let video=sec.childNodes[3]
+    sec.addEventListener("mouseenter",()=>{
+        video.style.opacity=1;
+        video.play();
+    })
+    sec.addEventListener("mouseleave",()=>{
+        video.style.opacity=0;
+        video.load();
+    })
+})
+
 
 
 navAnimation();
