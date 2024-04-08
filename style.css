@@ -1,16 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: gilroy;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-nav{
+nav {
     z-index: 100;
     position: fixed;
     display: flex;
@@ -23,16 +24,16 @@ nav{
     background-color: #111;
 }
 
-nav h1{
+nav h1 {
     padding: 0.7vw 0;
 
 }
 
-nav button{
+nav button {
     margin: 0.8vw 0;
 }
 
-.nav-part2{
+.nav-part2 {
     display: flex;
     flex-direction: row;
     gap: 2vw;
@@ -42,17 +43,18 @@ nav button{
     z-index: 10;
 }
 
-.nav-part2 h4{
+.nav-part2 h4 {
     font-size: 0.77vw;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 2vw;
 }
-.nav-part2 h5 span{
+
+.nav-part2 h5 span {
     font-size: 0.78vw;
-    font-weight:400;
+    font-weight: 400;
     display: inline-block;
-    
+
 }
 
 .nav-part2 h5 {
@@ -61,7 +63,7 @@ nav button{
     overflow: hidden;
 }
 
-.nav-bottom{
+.nav-bottom {
     border-bottom: 1px solid #dadada;
     height: 0%;
     width: 79%;
@@ -73,11 +75,10 @@ nav button{
     justify-content: space-between;
     padding: 2vw 15vw;
     padding-left: 18vw !important;
-    gap: 1rem 
-    !important;
+    gap: 1rem !important;
 }
 
-#nav-bottom{
+#nav-bottom {
     width: 79%;
     height: 0vh;
     position: absolute;
@@ -91,38 +92,38 @@ nav button{
     margin-bottom: 2vw;
 }
 
-.bottom-div h5 span{
+.bottom-div h5 span {
     font-size: 1vw;
     display: inline-block;
     opacity: 0;
 }
 
-nav:hover .nav-bottom{
+nav:hover .nav-bottom {
     height: 150%;
     bottom: -150%;
 }
 
-#lets-talk{
+#lets-talk {
     z-index: 10;
     background-color: #0DA34E;
     display: flex;
     align-items: center;
     padding: 15px 25px;
     border: none;
-    border-radius:50px;
+    border-radius: 50px;
     font-size: 0.85vw;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
 }
 
-#lets-talk svg{
+#lets-talk svg {
     height: 0.8vw;
     margin-left: 0.5vw;
 
 }
 
-#page1{
+#page1 {
     height: 100vh;
     width: 100vw;
     background-color: #111;
@@ -130,38 +131,39 @@ nav:hover .nav-bottom{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:  relative;
     color: white;
 }
 
-#page1 p{
+#page1 p {
     font-weight: 400;
-    margin-top:3vh ;
+    margin-top: 3vh;
     text-align: center;
     font-size: 1.3vw;
 }
 
-#page1 h1{
+#page1 h1 {
     font-size: 8.5vw;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 8.5vw;
 }
 
-#page1 h1 svg{
+#page1 h1 svg {
     height: 6vw;
     width: 6vw;
-    background-color:#0DA34E;
+    background-color: #0DA34E;
     border-radius: 50%;
 }
 
-#page1-buttons{
+#page1-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
 
-#page1-buttons h4{
+#page1-buttons h4 {
     font-weight: 400;
     font-size: 1.2vw;
     text-transform: lowercase;
@@ -171,13 +173,13 @@ nav:hover .nav-bottom{
     margin-top: 10px;
 }
 
-#page1-buttons h4:nth-last-child(2){
+#page1-buttons h4:nth-last-child(2) {
     border: none;
     padding: 2px;
 }
 
 
-#moving-div{
+#moving-div {
     margin-top: 10vh;
     position: absolute;
     bottom: 3%;
@@ -188,15 +190,16 @@ nav:hover .nav-bottom{
 }
 
 @keyframes mobe {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
-#moving-div .move{
+#moving-div .move {
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -206,34 +209,34 @@ nav:hover .nav-bottom{
     animation-iteration-count: infinite;
 }
 
-#moving-div .move img{
+#moving-div .move img {
     height: 1vw;
 }
 
 
-.blur-left{
+.blur-left {
     height: 100%;
     top: 0;
     z-index: 2;
     width: 20%;
     position: absolute;
-    background:linear-gradient(to right,#111,transparent);
+    background: linear-gradient(to right, #111, transparent);
     left: 0;
 }
 
-.blur-right{
+.blur-right {
     height: 100%;
     top: 0;
     z-index: 2;
     width: 20%;
     position: absolute;
-    background:linear-gradient(to right,transparent,#111);
+    background: linear-gradient(to right, transparent, #111);
     right: 0;
 }
 
 
 
-#page2{
+#page2 {
     height: 100vh;
     width: 100%;
     background-color: #111;
@@ -247,7 +250,7 @@ nav:hover .nav-bottom{
     border-top: 1px solid #333;
 }
 
-#page2-left{
+#page2-left {
     height: 100%;
     width: 40%;
     display: flex;
@@ -257,35 +260,35 @@ nav:hover .nav-bottom{
     padding: 3vw 0;
 }
 
-#page2-left p{
+#page2-left p {
     font-size: 1vw;
 }
 
-#page2-left h5{
+#page2-left h5 {
     font-size: 1.1vw;
     width: 75%;
     font-weight: 400;
 }
 
-#page2-right{
+#page2-right {
     height: 100%;
     width: 50%;
 }
 
-.right-elem h2{
+.right-elem h2 {
     font-size: 1.4vw;
     font-weight: 400;
 }
 
-.right-elem{
+.right-elem {
     padding-top: 2vw;
     padding-bottom: 5vw;
     position: relative;
     border-bottom: 1px solid #333;
 }
 
-.right-elem img{
-    height:7vw;
+.right-elem img {
+    height: 7vw;
     width: 7vw;
     border-radius: 50%;
     object-fit: cover;
@@ -294,7 +297,7 @@ nav:hover .nav-bottom{
     scale: 0;
 }
 
-#page3{
+#page3 {
     height: 100vh;
     width: 100%;
     background-color: #111;
@@ -306,22 +309,22 @@ nav:hover .nav-bottom{
     position: relative;
 }
 
-.page3-center .icon{
+.page3-center .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:3.3vw;
+    padding: 3.3vw;
     border-radius: 50%;
     background-color: #fff;
     font-size: 2vw;
     color: black;
 }
 
-.icon i{
+.icon i {
     font-size: 3vw;
 }
 
-.page3-center{
+.page3-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,7 +332,8 @@ nav:hover .nav-bottom{
     cursor: pointer;
     text-transform: uppercase;
 }
-.page3-center h5{
+
+.page3-center h5 {
     margin-top: 10px;
     font-size: 1vw;
     border-radius: 50px !important;
@@ -341,12 +345,12 @@ nav:hover .nav-bottom{
     z-index: 10;
 }
 
-.page3-center:hover.page3-center h5{
+.page3-center:hover.page3-center h5 {
     opacity: 1;
     transform: translateY(0%);
 }
 
-#page3video{
+#page3video {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -358,23 +362,23 @@ nav:hover .nav-bottom{
 }
 
 
-#page4{
+#page4 {
     display: flex;
     height: 100%;
     width: 100%;
 }
 
-#page4-left{
+#page4-left {
     width: 50%;
-    padding: 7vw 15vw 15vw 11vw;   
+    padding: 7vw 15vw 15vw 11vw;
 }
 
-#page4-left h1{
+#page4-left h1 {
     font-size: 3.2vw;
     font-weight: bold;
 }
 
-#page4-right{
+#page4-right {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -384,31 +388,31 @@ nav:hover .nav-bottom{
     gap: 4rem;
 }
 
-.page4-content span{
+.page4-content span {
     text-transform: uppercase;
     color: gray;
     font-size: 1vw;
 }
 
-.page4-content{
+.page4-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.page4-content p{
+.page4-content p {
     font-size: 1.5vw;
 }
 
 
-#page5{
+#page5 {
     display: flex;
     flex-direction: column;
     gap: 0.7vw;
     padding: 5vw 10vw;
 }
 
-.page5-row{
+.page5-row {
     display: flex;
     flex-direction: row;
     gap: 0.7vw;
@@ -419,7 +423,7 @@ nav:hover .nav-bottom{
 
 
 
-.page5-box{
+.page5-box {
     background-color: #F5F5F5;
     height: 22rem;
     width: 30rem;
@@ -429,26 +433,26 @@ nav:hover .nav-bottom{
     padding: 2rem 1rem;
 }
 
-.box-top{
+.box-top {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.box-bottom{
+.box-bottom {
     color: gray;
 }
 
-.box-description{
+.box-description {
     font-size: 0.9vw;
 }
 
-.box-title{
-    font-weight:600;
-    font-size: 3.5vw;   
+.box-title {
+    font-weight: 600;
+    font-size: 3.5vw;
 }
 
-#page6{
+#page6 {
     padding-top: 7vw;
     height: 100%;
     margin-left: 5vw;
@@ -458,17 +462,18 @@ nav:hover .nav-bottom{
     position: relative;
 }
 
-#page6 p span{
+#page6 p span {
     position: relative;
     font-size: 1vw;
     margin-right: 10vw;
     margin-bottom: 10vw;
 }
-#page6 p{
-    font-size: 2.3vw;   
+
+#page6 p {
+    font-size: 2.3vw;
 }
 
-#page7{
+#page7 {
     min-height: 100vh;
     width: 100%;
     background-color: #fff;
@@ -476,7 +481,8 @@ nav:hover .nav-bottom{
     color: black;
     padding-bottom: 13vh;
 }
-.section{
+
+.section {
     width: 100%;
     height: 72vh;
     display: flex;
@@ -486,39 +492,39 @@ nav:hover .nav-bottom{
     padding-bottom: 0;
 }
 
-.sec-left{
+.sec-left {
     height: 100%;
     width: 25%;
     padding-top: 3vh;
     border-top: 2px solid black;
 }
 
-.sec-left h2{
+.sec-left h2 {
     font-size: 2vw;
     font-weight: 500;
     color: black;
 }
 
-.sec-left p{
+.sec-left p {
     color: black;
     margin-top: 10vh;
     font-size: 1.2vw;
 }
 
-.sec-right{
+.sec-right {
     height: 100%;
     width: 70%;
     background-color: pink;
     position: relative;
 }
 
-.sec-right img{
+.sec-right img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.sec-right video{
+.sec-right video {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -530,7 +536,7 @@ nav:hover .nav-bottom{
 }
 
 
-#page8{
+#page8 {
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -538,9 +544,11 @@ nav:hover .nav-bottom{
     background-color: #111;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 5vh 5vw;
+    color: #fff;
 }
 
-#page8>button{
+#page8 button {
     background-color: #0DA34E;
     padding: 1vw 2.5vw;
     font-size: 1vw;
@@ -548,9 +556,299 @@ nav:hover .nav-bottom{
     border-radius: 50px;
     border: none;
     color: #fff;
+    position: sticky;
+    top: 20%;
 }
 
-#page8-right{
+#page8-right {
     width: 70%;
-    
+    color: white;
+}
+
+#page8-right>p {
+    font-size: 2.1vw;
+}
+
+#page8-right>p>span {
+    width: 15vw;
+    display: inline-block;
+}
+
+#page8-content {
+    width: 100%;
+    margin-top: 5vh;
+    padding: 5vh 0;
+    border-top: 2px solid #fff;
+}
+
+#page8-content h1 {
+    font-size: 3vw;
+}
+
+#page8-content #flex {
+    display: flex;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-transform: uppercase;
+}
+
+#page8-content #flex h4 {
+    border-radius: 50px;
+    border: 1px solid #555;
+    font-weight: 900;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 0.8vw;
+}
+
+.page8-elem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-bottom: 9vh;
+    position: relative;
+    border-top: 1px solid #333;
+}
+
+.page8-elem p {
+    width: 55%;
+    font-size: 0.8vw;
+    position: relative;
+    z-index: 10;
+}
+
+.page8-elem h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+}
+
+.page8-elem i {
+    font-size: 1vw;
+    position: relative;
+    z-index: 10;
+}
+
+.over {
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all ease-out 0.5s;
+}
+
+.page8-elem:hover h3 {
+    padding-left: 1vw;
+}
+
+
+.page8-elem:hover i {
+    padding-right: 1vw;
+}
+
+
+.page8-elem:hover .over {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.page8-elem:hover {
+    border-top: 2px solid #fff;
+}
+
+/* 
+#page8-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+} */
+
+#page9 {
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
+
+summary::marker {
+    content: "";
+}
+
+.product,
+.uiux {
+    border-top: 2px solid #333;
+    padding: 2vw 0;
+
+}
+
+#page9 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding: 10vh 10vw;
+}
+
+#page9>h1 {
+    font-size: 5.5vw;
+    color: #000;
+    text-align: center;
+    line-height: 5.8vw;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid #dadada;
+}
+
+#page9-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page9-content #right9 {
+    width: 70%;
+    padding-top: 13.5vw;
+    padding-bottom: 3vw;
+}
+
+#page9-content #right9 p {
+    font-size: 1.5vw;
+    color: black;
+    margin-bottom: 5vh;
+    width: 80%;
+}
+
+#blue-btn {
+    background-color: #4f5bff;
+    height: 3.5vw;
+    width: 16vw;
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blue-btn h4 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.85vw;
+}
+
+#blue-btn h4 i {
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-left: 0.5vw;
+}
+
+#page9-bottom {
+    width: 100%;
+    height: 44vh;
+    border-top: 1px solid #dadada;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#btm6-part1 {
+    border-right: 1px solid #dadada;
+    width: 30%;
+    height: 100%;
+}
+
+#btm6-part2 {
+    width: 28%;
+    border-right: 1px solid #dadada;
+    height: 100%;
+}
+
+#btm6-part3 {
+    width: 15%;
+    border-right: 1px solid #dadada;
+    height: 100%;
+}
+
+#btm6-part4 {
+    width: 15%;
+    border-right: 1px solid #dadada;
+    height: 100%;
+}
+
+
+#btm6-part4 {
+    width: 15%;
+    height: 100%;
+}
+
+
+.btm6-parts {
+    padding: 3vh 0.5vw;
+
+}
+
+.btm6-parts h5 {
+    color: black;
+    font-weight: 500;
+    font-size: 0.9vw;
+    margin-bottom: 4vh;
+}
+
+.btm6-parts h4 {
+    background-color: #111;
+    width: 75%;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.9vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3vh;
+}
+
+.btm6-parts h4 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #333;
+    padding: 0.5vw;
+    border-radius: 50%;
+    margin-right: 1vw;
+
+}
+
+#btm6-part2 h4:nth-child(2){
+    transform: translateX(0);
+}
+
+#btm6-part2 h4:nth-child(3){
+    transform: translateX(10%);
+}
+
+#btm6-part2 h4:nth-child(4){
+    transform: translateX(20%);
+}
+
+#btm6-part2 h4:nth-child(4){
+    transform: translateX(30%);
+}
+
+#btm6-part2 h4:nth-child(5){
+    transform: translateX(40%);
+}
+
+#btm6-part2 h4:nth-child(6){
+    transform: translateX(50%);
+}
+#btm6-part2 h4:nth-child(7){
+    transform: translateX(60%);
+}
+
+#page10{
+    height: 100vh;
+    background-color: #111;
 }
